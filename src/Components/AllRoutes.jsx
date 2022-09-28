@@ -6,36 +6,41 @@ import MensWear from '../Pages/MensWear';
 import ShoppingBag from '../Pages/ShoppingBag';
 import WishList from '../Pages/WishList';
 import WomensWear from '../Pages/WomensWear';
+import PrivateRoute from './PrivateRoute';
 
 function AllRoutes() {
 	return (
 		<Routes>
 			<Route
-				path=""
+				path=''
 				element={<Home />}
 			></Route>
 			<Route
-				path="/men"
+				path='/men'
 				element={<MensWear />}
 			></Route>
 			<Route
-				path="/women"
+				path='/women'
 				element={<WomensWear />}
 			></Route>
 			<Route
-				path="/everything-else"
+				path='/everything-else'
 				element={<EveryThingElse />}
 			></Route>
 			<Route
-				path="/login"
+				path='/login'
 				element={<LoginSignup />}
 			></Route>
 			<Route
-				path="/wishlist"
-				element={<WishList />}
+				path='/wishlist'
+				element={
+					<PrivateRoute>
+						<WishList />
+					</PrivateRoute>
+				}
 			></Route>
 			<Route
-				path="/shopping-bag"
+				path='/shopping-bag'
 				element={<ShoppingBag />}
 			></Route>
 		</Routes>
