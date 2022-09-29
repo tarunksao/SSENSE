@@ -8,6 +8,9 @@ function Footer() {
 		<Container
 			maxW={'6xl'}
 			fontSize='xs'
+			my={10}
+			// pos='relative'
+			// bottom='0'
 		>
 			<VStack gap={4}>
 				<Flex gap={7}>
@@ -19,7 +22,7 @@ function Footer() {
 					<Link>CAREERS</Link>
 					<Link>AFFILIATES</Link>
 					<Link>SITEMAP</Link>
-					<Flex gap={5}>
+					<Flex gap={2}>
 						<Icon as={FaFacebook} />
 						<Icon as={FaTwitter} />
 						<Icon as={FaInstagram} />
