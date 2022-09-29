@@ -13,10 +13,10 @@ import {
 	Text,
 	useDisclosure,
 } from '@chakra-ui/react';
-import { set } from 'lodash';
 import { useReducer, useState } from 'react';
 import { Link } from 'react-router-dom';
 import clickReducer from './clickReducer';
+import ssenseLogo from '../Images/ssenseLogo.png';
 
 function Navbar() {
 	const { isOpen, onToggle, onClose } = useDisclosure();
@@ -32,7 +32,14 @@ function Navbar() {
 	};
 
 	return (
-		<Box maxW={'full'}>
+		<Box
+			maxW={'full'}
+			pos='fixed'
+			w='100%'
+			zIndex={2}
+			bg='white'
+			top='0px'
+		>
 			<Box
 				bg='blackAlpha.200'
 				h={'45px'}
@@ -119,7 +126,7 @@ function Navbar() {
 						<Link to='/'>
 							<Image
 								w={'100px'}
-								src='https://www.hostedpci.com/wp-content/uploads/2020/12/ssense-logo-300x56.png'
+								src={ssenseLogo}
 								alt='ssense-logo'
 							/>
 						</Link>
