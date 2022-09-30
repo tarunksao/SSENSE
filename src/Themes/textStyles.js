@@ -1,4 +1,11 @@
 const textStyles = {
+	mainContainer: {
+		maxW: '8xl',
+		h: 'auto',
+		pos: 'relative',
+		top: '70px',
+		mb: '200px',
+	},
 	blogHeading: {
 		fontSize: 'xl',
 		w: 'sm',
