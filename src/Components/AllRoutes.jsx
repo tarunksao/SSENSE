@@ -1,7 +1,7 @@
 import { Route, Routes } from 'react-router-dom';
 import EveryThingElse from '../Pages/EveryThingElse';
 import Home from '../Pages/Home';
-import LoginSignup from '../Pages/LoginSignup';
+import LoginSignup from '../Pages/LoginSignup/LoginSignup';
 import MensWear from '../Pages/MensWear';
 import ShoppingBag from '../Pages/ShoppingBag';
 import WishList from '../Pages/WishList';

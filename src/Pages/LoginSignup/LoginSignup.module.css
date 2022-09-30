@@ -1,0 +1,21 @@
+.inputBox {
+    border: 1px solid;
+    padding: 5px 10px;
+    font-size: 12px;
+    width: 450px;
+    outline: none;
+}
+
+.loginButton {
+    border: 1px solid;
+    background-color: black;
+    color: white;
+    padding: 2px 10px;
+    width: 450px;
+    margin-top: 20px;
+    font-size: 12px;
+    height: 35px;
+    margin-top: 40px;
+    text-align: center;
+    letter-spacing: 1px;
+}
