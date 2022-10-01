@@ -6,6 +6,7 @@ import ExistingUser from './ExistingUser';
 import { findUsers } from './loginUsersApi';
 import { Navigate } from 'react-router-dom';
 import NewUser from './NewUser';
+import { existingUser, newUser } from '../../Context/authAction';
 
 function LoginSignup() {
 	const { state, dispatch } = useContext(AuthContext);
@@ -15,7 +16,9 @@ function LoginSignup() {
 		findUsers({ email: state.userEmail })
 			.then((res) => {
 				console.log(res.data);
-				console.log(res.data.length === 0 ? 'yes' : 'no');
+				console.log(
+					res.data.length === 0 ? dispatch(newUser) : dispatch(existingUser)
+				);
 			})
 			.catch((err) => {
 				console.log(err);
