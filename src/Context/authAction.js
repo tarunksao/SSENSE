@@ -2,7 +2,7 @@ export const newUser = { type: 'NEW_USER' };
 
 export const existingUser = { type: 'EXISTING_USER' };
 
-export const isuser = { type: 'AUTHENTICATE' };
+export const isUser = { type: 'AUTHENTICATE' };
 
 export const getUser = (val) => {
 	return {
