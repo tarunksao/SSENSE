@@ -1,11 +1,13 @@
 import { Box, Text } from '@chakra-ui/react';
 import { useContext } from 'react';
-import { setPassword } from '../../Context/authAction';
+import { goBack, setPassword } from '../../Context/authAction';
 import { AuthContext } from '../../Context/AuthContext';
 import styles from './LoginSignup.module.css';
 
-const NewUser = () => {
+const NewUser = ({ newUserRegister }) => {
 	const { state, dispatch } = useContext(AuthContext);
+
+	// console.log(state.userEmail);
 
 	return (
 		<Box
@@ -31,6 +33,7 @@ const NewUser = () => {
 				type='email'
 				name='email'
 				value={state.userEmail}
+				readOnly
 			/>
 			<br />
 			<Text
@@ -48,12 +51,18 @@ const NewUser = () => {
 				onChange={(e) => dispatch(setPassword(e.target.value))}
 			/>
 			<br />
-			<button className={styles.loginButton}>CREATE AN ACCOUNT</button>
+			<button
+				className={styles.loginButton}
+				onClick={newUserRegister}
+			>
+				CREATE AN ACCOUNT
+			</button>
 			<Text
 				fontSize='xs'
 				mt={8}
 				mb={1}
 				textAlign='center'
+				onClick={() => dispatch(goBack)}
 			>
 				BACK
 			</Text>

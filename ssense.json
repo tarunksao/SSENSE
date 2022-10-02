@@ -1034,22 +1034,6 @@
 		{
 			"@context": "https://schema.org",
 			"@type": "Product",
-			"productID": "10646601",
-			"name": "Beige Le Papier 'La Chemise Neve Fleurs' Cardigan",
-			"brand": { "@type": "Brand", "name": "Jacquemus" },
-			"offers": {
-				"@type": "Offer",
-				"price": 815,
-				"priceCurrency": "USE",
-				"availability": "https://schema.org/InStock",
-				"url": "/men/product/jacquemus/beige-le-papier-la-chemise-neve-fleurs-cardigan/10646601"
-			},
-			"url": "/men/product/jacquemus/beige-le-papier-la-chemise-neve-fleurs-cardigan/10646601",
-			"image": "https://img.ssensemedia.com/images/222553M192001_1/jacquemus-beige-le-papier-la-chemise-neve-fleurs-cardigan.jpg"
-		},
-		{
-			"@context": "https://schema.org",
-			"@type": "Product",
 			"productID": "10647581",
 			"name": "Blue Le Papier 'La Chemise Jean' Shirt",
 			"brand": { "@type": "Brand", "name": "Jacquemus" },

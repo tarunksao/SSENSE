@@ -7,3 +7,10 @@ export const findUsers = (params = {}) => {
 		},
 	});
 };
+
+export const setUser = (data = {}) => {
+	return axios.post('http://localhost:4000/users', {
+		email: data.email,
+		password: data.password,
+	});
+};

@@ -6,8 +6,6 @@ function authReducer(state, action) {
 				newUser: true,
 				existingUser: false,
 				isAuth: false,
-				userEmail: '',
-				userPassword: '',
 			};
 		case 'AUTHENTICATE':
 			return {
@@ -15,8 +13,6 @@ function authReducer(state, action) {
 				newUser: false,
 				existingUser: false,
 				isAuth: true,
-				userEmail: '',
-				userPassword: '',
 			};
 		case 'EXISTING_USER':
 			return {
@@ -24,8 +20,6 @@ function authReducer(state, action) {
 				newUser: false,
 				existingUser: true,
 				isAuth: false,
-				userEmail: '',
-				userPassword: '',
 			};
 		case 'GET_USER':
 			return {
@@ -44,6 +38,15 @@ function authReducer(state, action) {
 				isAuth: false,
 				userEmail: '',
 				userPassword: action.payload,
+			};
+		case 'GO_BACK':
+			return {
+				...state,
+				newUser: false,
+				existingUser: false,
+				isAuth: false,
+				userEmail: '',
+				userPassword: '',
 			};
 		default:
 			return state;
