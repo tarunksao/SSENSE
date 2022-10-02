@@ -1,6 +1,6 @@
 import { Box, Text } from '@chakra-ui/react';
 import { useContext } from 'react';
-import { setPassword } from '../../Context/authAction';
+import { goBack, setPassword } from '../../Context/authAction';
 import { AuthContext } from '../../Context/AuthContext';
 import styles from './LoginSignup.module.css';
 
@@ -55,6 +55,7 @@ const ExistingUser = () => {
 				mb={1}
 				textAlign='center'
 				textDecoration='underline'
+				onClick={() => dispatch(goBack)}
 			>
 				NOT YOUR EMAIL?
 			</Text>

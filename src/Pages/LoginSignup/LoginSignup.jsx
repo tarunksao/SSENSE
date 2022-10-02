@@ -3,7 +3,7 @@ import { useContext } from 'react';
 import { AuthContext } from '../../Context/AuthContext';
 import CheckLogin from './CheckLogin';
 import ExistingUser from './ExistingUser';
-import { findUsers } from './loginUsersApi';
+import { findUsers, setUser } from './loginUsersApi';
 import { Navigate } from 'react-router-dom';
 import NewUser from './NewUser';
 import { existingUser, newUser } from '../../Context/authAction';
@@ -15,10 +15,8 @@ function LoginSignup() {
 		console.log(state.userEmail);
 		findUsers({ email: state.userEmail })
 			.then((res) => {
-				console.log(res.data);
-				console.log(
-					res.data.length === 0 ? dispatch(newUser) : dispatch(existingUser)
-				);
+				// console.log(res.data);
+				res.data.length === 0 ? dispatch(newUser) : dispatch(existingUser);
 			})
 			.catch((err) => {
 				console.log(err);
@@ -28,12 +26,20 @@ function LoginSignup() {
 			});
 	};
 
+	const newUserRegister = () => {
+		setUser({ email: state.userEmail, password: state.password }).then(
+			(res) => {
+				console.log(res.data);
+			}
+		);
+	};
+
 	return (
 		<Container textStyle='mainContainer'>
 			{!state.newUser && !state.existingUser ? (
 				<CheckLogin checkUser={checkUser} />
 			) : state.newUser ? (
-				<NewUser />
+				<NewUser newUserRegister={newUserRegister} />
 			) : state.existingUser ? (
 				<ExistingUser />
 			) : (

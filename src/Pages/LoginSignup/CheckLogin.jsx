@@ -7,6 +7,8 @@ import styles from './LoginSignup.module.css';
 const CheckLogin = ({ checkUser }) => {
 	const { state, dispatch } = useContext(AuthContext);
 
+	// console.log(state.userEmail);
+
 	return (
 		<Box mt={20}>
 			<Text
