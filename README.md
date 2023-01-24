@@ -16,11 +16,18 @@
                                                 Some demo images of our App
 
 ### Home Page
-![homePage1](Image/homePage1.png)
-![homePage2](Image/homePage2.png)
-![homePage3](Image/homePage3.png)
-![homePage4](Image/homePage4.png)
-![homePage5](Image/homePage5.png)
-![homePage6](Image/homePage6.png)
-![homePage7](Image/homePage7.png)
-![homePage8](Image/homePage8.png)
+![homePage1](Images/homePage1.png)
+
+![homePage2](Images/homePage2.png)
+
+![homePage3](Images/homePage3.png)
+
+![homePage4](Images/homePage4.png)
+
+![homePage5](Images/homePage5.png)
+
+![homePage6](Images/homePage6.png)
+
+![homePage7](Images/homePage7.png)
+
+![homePage8](Images/homePage8.png)
