@@ -20,7 +20,7 @@ function PrivateRoute({ children }) {
 					bg='blackAlpha.900'
 					align='center'
 				>
-					Hello World
+					Please Login First
 				</Box>
 			),
 		});

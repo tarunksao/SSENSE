@@ -13,11 +13,11 @@ import { useEffect, useState } from 'react';
 import axios from 'axios';
 
 const getDesigner = () => {
-	return axios.get('http://localhost:4000/menswearDesigner');
+	return axios.get('https://mock-data-ssense.onrender.com/menswearDesigner');
 };
 
 const getMensWear = () => {
-	return axios.get('http://localhost:4000/menswearProduct');
+	return axios.get('https://mock-data-ssense.onrender.com/menswearProduct');
 };
 
 function MensWear() {
