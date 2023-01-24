@@ -3,14 +3,14 @@
 ### Deployed Link : https://ssense-clone-app.netlify.app/
 
 ### Project Description
-    - Individual Project
+- Individual Project
 
 ### Tech Stacks
-    - React JS
-    - REST API
-    - React Router Dom V6
-    - JSON Server
-    - Chakra UI
+- React JS
+- REST API
+- React Router Dom V6
+- JSON Server
+- Chakra UI
 
 
                                                 Some demo images of our App
